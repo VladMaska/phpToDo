@@ -21,17 +21,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Список задач</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>📝 Мой список задач</h1>
+    <h1>📝 My To-Do List</h1>
     <form method="POST">
-        <input type="text" name="task" placeholder="Новая задача..." required>
-        <button type="submit">Добавить</button>
+        <input type="text" name="task" placeholder="New task..." required>
+        <button type="submit">Add</button>
     </form>
     <ul>
         <?php foreach ($tasks as $i => $task): ?>
